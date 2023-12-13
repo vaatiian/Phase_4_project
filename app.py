@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from statsmodels.tsa.arima.model import ARIMA
+import statsmodels.tsa.arima.model as arima
 import matplotlib.pyplot as plt
 import pickle
 
@@ -67,4 +67,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
