@@ -35,28 +35,29 @@ def main():
     # Load the serialized ARIMA model
     arima_model = load_arima_model()
 
-    # Data input section
+    # User input for manual historical stock prices
     st.header('Enter Historical Stock Prices:')
-    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    stock_prices_input = st.text_area("Enter historical stock prices separated by commas")
 
-    if uploaded_file is not None:
-        # Read the uploaded file
-        df = pd.read_csv(uploaded_file)
-        
-        # Perform predictions
-        predictions = make_predictions(arima_model, df)
-        
-        # Visualization
-        st.subheader('Stock Price Prediction:')
-        visualize_data(df, predictions)
-        
-        # Show metrics or additional details
-        st.subheader('Model Performance Metrics:')
-        # Display relevant metrics (e.g., RMSE, MAE)
-        st.write("Placeholder for model metrics")
-    
-    else:
-        st.write('Upload a CSV file to get started.')
+    if st.button('Predict'):
+        if stock_prices_input:
+            # Process the input data (convert to list of floats)
+            stock_prices_list = [float(price.strip()) for price in stock_prices_input.split(',')]
+
+            # Perform predictions
+            predictions = make_predictions(arima_model, stock_prices_list)
+
+            # Visualization
+            st.subheader('Stock Price Prediction:')
+            visualize_data(stock_prices_list, predictions)
+
+            # Show metrics or additional details
+            st.subheader('Model Performance Metrics:')
+            # Display relevant metrics (e.g., RMSE, MAE)
+            st.write("Placeholder for model metrics")
+        else:
+            st.write('Please enter historical stock prices to make predictions.')
 
 if __name__ == '__main__':
     main()
+
