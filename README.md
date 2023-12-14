@@ -102,7 +102,7 @@ The LSTM model exhibits the lowest MSE(26,483) among the presented models, empha
 Prophet, with its higher RMSE among the presented models, indicates a less accurate short-term forecasting performance. While Prophet may provide valuable insights, especially in capturing seasonality and holidays, it appears to be less suitable for achieving the precision required in short-term predictions compared to ARIMA.
 
 
-In summary, based on the results, the ARIMA Model exhibits the lowest RMSE among the presented models, suggesting its potential as the most suitable choice as it suggests a higher accuracy in predicting the short-term movement of the Dow Jones Industrial Average.
+In summary, based on the results, the ARIMA Model exhibits the lowest RMSE among the presented models, suggesting its potential as the most suitable choice with high accuracy in predicting the short-term movement of the Dow Jones Industrial Average.
 
 ## Conclusion
 
