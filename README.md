@@ -53,8 +53,6 @@ The success of the project will be evaluated based on the following criteria:
 
 1. **Accuracy:** The developed machine learning model must accurately predict the direction of DJIA movement for the specified time horizon.
 
-2. **Outperformance:** The model should consistently outperform benchmark models, such as a simple moving average, in terms of accuracy.
-
 3. **User-Friendly Interface:** The web application or API developed as part of the project should provide a user-friendly interface for obtaining DJIA predictions. Users should find it intuitive and easy to navigate.
 
 By meeting these success criteria, the project aims to showcase the efficacy of machine learning in providing valuable insights into stock market movements.
