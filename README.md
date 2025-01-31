@@ -87,6 +87,10 @@ The project employs an analytical approach by applying various machine-learning 
 ### Data Source
 
 The project utilizes data collected from the investing.com website, covering historical data for the Dow Jones Industrial Average (DJIA) from 01/03/2000 to 11/24/2023. The dataset includes attributes such as Date, Close, Open, High, Low, Volume, and Change %.
+![image](https://github.com/user-attachments/assets/cbca4932-bfbe-40a9-a22d-a1fea50a91bd)
+
+![image](https://github.com/user-attachments/assets/0ef6d89c-b5c4-4b06-b16b-a163a7f1423c)
+
 
 ## Summary of Model Training
 
