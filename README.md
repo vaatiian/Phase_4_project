@@ -94,6 +94,13 @@ The project utilizes data collected from the investing.com website, covering his
 
 ## Summary of Model Training
 
+![image](https://github.com/user-attachments/assets/7d9ae708-4647-461d-b1d6-beb33e39b66f)
+
+![image](https://github.com/user-attachments/assets/c6cb8796-280b-46e0-b607-1aa074a19d66)
+
+![image](https://github.com/user-attachments/assets/a6eb5c3f-8e56-48aa-9193-3edf5ffc51eb)
+
+
 The project involves the training and evaluation of several machine learning models, including an ARIMA model, a LSTM (Long Short-Term Memory) neural network, and the Prophet time series forecasting model. The models are assessed based on accuracy, root mean squared error (RMSE), and other relevant metrics.
 
 The LSTM model exhibits the lowest RMSE(895.121) among the presented models, emphasizing its potential for capturing long-term dependencies in the data.
